@@ -10,6 +10,7 @@ def get_file_lines(filename):
     poem_Open = open(poetry_file_name, 'r').readlines()
     poem = []
     for line in poem_Open:
+        # appending the poem line to the empty string
         poem.append(line.strip())
     
     
@@ -31,6 +32,7 @@ def lines_printed_backwards(lines_list):
 def lines_printed_random(lines_list): 
     lines_list = open("/Users/brianross/dev/courses/cs1.0/Poetry Slam/poem.txt", 'r').readlines()
     for line in lines_list:
+        #for loop to randomly get a line and then print it along with what line it is
         line = random.randrange(len(lines_list))
         random_line = str(line) + " " + lines_list[line]
         print(random_line)
