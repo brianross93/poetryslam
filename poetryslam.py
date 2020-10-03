@@ -36,8 +36,10 @@ def lines_printed_random(lines_list):
         print(random_line)
 
 def lines_printed_custom(lines_list): 
+    # Prints even lines
     lines_list = open("/Users/brianross/dev/courses/cs1.0/Poetry Slam/poem.txt", 'r').readlines()
     for line in range(len(lines_list)): 
+        # If the iterator modulus 2 is equal to zero we print it
         if (line % 2 == 0):
             print(line, lines_list[line])
     
